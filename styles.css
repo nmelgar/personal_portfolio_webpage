@@ -27,7 +27,6 @@ body {
 }
 
 #container {
-  background: var(--ligth-white);
   margin: 0 auto;
   /*Max width for the main container*/
   max-width: 100%x;
