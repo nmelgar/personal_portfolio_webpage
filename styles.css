@@ -12,16 +12,20 @@
 /*--------->FONTS<-----------*/
 /*--------->Variables<-----------*/
 :root {
-  --ligth-white: #FBEFE5;
-  --darkest-brown: #8C3F23;
-  --dark-brown: #BF622C;
-  --light-brown: #F2A766;
-  --cherry: #D90754;
+
+  --dark: #000000;
+  --green: #39FF14;
+  --grey: #E1E1E1;
+  --light-dark: #1B1B1B;
+  --light-grey: #F3F3F3;
+  --white: #FFFFFF;
+
 }
 
 /*--------->General Styles<-----------*/
 body {
-  background-color: var(--ligth-brown);
+  background-color: var(--dark);
+  color: var(--white);
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   /*Max width for the main container*/
@@ -47,18 +51,13 @@ nav ul li {
 nav ul li a {}
 
 /*--------->Main<-----------*/
-#main-content{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+#main-content {
   align-items: center;
-}
-
-#main-content h4{
   display: flex;
-
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
 }
-
 
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
