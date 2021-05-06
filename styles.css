@@ -10,7 +10,6 @@
   Notes
 */
 /*--------->FONTS<-----------*/
-
 /*--------->Variables<-----------*/
 :root {
   --ligth-white: #FBEFE5;
@@ -24,29 +23,47 @@
 body {
   background-color: var(--ligth-brown);
   font-family: 'Raleway', sans-serif;
-}
-
-#container {
   margin: 0 auto;
   /*Max width for the main container*/
-  max-width: 100%x;
+  max-width: 100%;
   text-align: center;
 }
 
+#container {}
 
 /*--------->HEADER<-----------*/
+header {
+  background: red;
+  text-align: right;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+nav ul li a {}
 
 /*--------->Main<-----------*/
+#main-content{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#main-content h4{
+  display: flex;
 
+}
 
 
 /*--------->Footer<-----------*/
-
-
 /*--------->Media Queries<-----------*/
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
+
 /*--------->NOTES<-----------*/
 /*
 - Para centrar algo horizontalmente en navegadores modernos, usa display:
