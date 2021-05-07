@@ -59,6 +59,14 @@ nav ul li a {}
   justify-content: center;
 }
 
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-image{
+  width: 100%;
+}
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
 @media (max-width: 768px) {}
