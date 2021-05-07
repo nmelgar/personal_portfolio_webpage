@@ -12,14 +12,12 @@
 /*--------->FONTS<-----------*/
 /*--------->Variables<-----------*/
 :root {
-
   --dark: #000000;
   --green: #39FF14;
   --grey: #E1E1E1;
   --light-dark: #1B1B1B;
   --light-grey: #F3F3F3;
   --white: #FFFFFF;
-
 }
 
 /*--------->General Styles<-----------*/
@@ -37,9 +35,15 @@ body {
 
 /*--------->HEADER<-----------*/
 header {
+
+}
+
+#nav-bar{
   background: red;
-  text-align: right;
   padding: 10px;
+  position: fixed;
+  text-align: right;
+  width: 100%;
 }
 
 nav ul li {
@@ -59,13 +63,35 @@ nav ul li a {}
   justify-content: center;
 }
 
-.projects{
+.projects-container{
+  padding-top: 4em;
+background: var(--light-dark);
+margin-top: 4em;
+
+}
+
+.projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.project-image{
+.project-image {
   width: 100%;
+}
+
+.contact{
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.social-btn{
+  justify-content: space-between;
+  background: none;
+  border: none;
+  color: white;
 }
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
