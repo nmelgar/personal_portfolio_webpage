@@ -12,17 +12,20 @@
 /*--------->FONTS<-----------*/
 /*--------->Variables<-----------*/
 :root {
-  --dark: #000000;
-  --green: #39FF14;
-  --grey: #E1E1E1;
-  --light-dark: #1B1B1B;
-  --light-grey: #F3F3F3;
+  --dark: #202022;
+  --dark-blue: #3f4d63;
+  --grey: #c6ccd8;
+  --dark-grey: #495057;
+  --darkest-grey: #343A40;
+  --light-blue: #85a1c1;
+  --blue: #274b69;
   --white: #FFFFFF;
+  --red: #E63946;
 }
 
 /*--------->General Styles<-----------*/
 body {
-  background-color: var(--dark);
+  background-color: var(--darkest-grey);
   color: var(--white);
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
@@ -34,12 +37,10 @@ body {
 #container {}
 
 /*--------->HEADER<-----------*/
-header {
+header {}
 
-}
-
-#nav-bar{
-  background: red;
+#nav-bar {
+  background: var(--red);
   padding: 10px;
   position: fixed;
   text-align: right;
@@ -47,8 +48,8 @@ header {
 }
 
 nav ul li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
   margin-right: 2em;
 }
 
@@ -63,11 +64,10 @@ nav ul li a {}
   justify-content: center;
 }
 
-.projects-container{
+.projects-container {
+  background-color: var(--blue);
+  margin-top: 4em;
   padding-top: 4em;
-background: var(--light-dark);
-margin-top: 4em;
-
 }
 
 .projects {
@@ -79,7 +79,7 @@ margin-top: 4em;
   width: 100%;
 }
 
-.contact{
+.contact {
   align-items: center;
   display: flex;
   flex-flow: column;
@@ -87,12 +87,13 @@ margin-top: 4em;
   justify-content: center;
 }
 
-.social-btn{
-  justify-content: space-between;
+.social-btn {
+  color: white;
   background: none;
   border: none;
-  color: white;
+  justify-content: space-between;
 }
+
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
 @media (max-width: 768px) {}
