@@ -36,12 +36,12 @@ body {
   text-align: center;
 }
 
-h1 {
+h1, h2 {
   font-size: 4em;
   font-weight: 700;
 }
 
-h4 {
+h3, h4 {
   margin-top: 0;
   font-size: 2em;
   font-style: italic;
@@ -49,10 +49,11 @@ h4 {
   color: var(--red);
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
+
 #container {}
 
 /*--------->HEADER<-----------*/
@@ -93,7 +94,7 @@ nav ul li a:hover {
 }
 
 .projects-container {
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
   margin-top: 4em;
   padding-top: 5em;
 }
@@ -105,6 +106,18 @@ nav ul li a:hover {
 
 .project-image {
   width: 100%;
+}
+
+.project-container {
+  background: var(--darkest-grey);
+}
+
+.project-container figcaption{
+  padding: 20px;
+}
+.project-container a {
+  color: white;
+  text-decoration: none;
 }
 
 .contact {
@@ -122,6 +135,16 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
+#social-mendia-links {}
+
+#social-media-links li {
+  list-style: none;
+}
+
+#social-media-links li a {
+  text-decoration: none;
+}
+
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
 @media (max-width: 768px) {
@@ -137,18 +160,17 @@ nav ul li a:hover {
     padding: 10px;
   }
 
-  h1 {
+  h1, h2 {
     font-size: 3em;
   }
 
-  h4 {
+  h3, h4 {
     font-size: 1.5em;
+    color: #e40017;
+    font-style: italic;
   }
 
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  
 }
 
 @media (max-width: 640px) {
