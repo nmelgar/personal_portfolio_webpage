@@ -10,6 +10,8 @@
   Notes
 */
 /*--------->FONTS<-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
+
 /*--------->Variables<-----------*/
 :root {
   --dark: #202022;
@@ -27,11 +29,24 @@
 body {
   background-color: var(--darkest-grey);
   color: var(--white);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   /*Max width for the main container*/
   max-width: 100%;
   text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: lighter;
+  color: var(--red);
 }
 
 #container {}
@@ -53,7 +68,16 @@ nav ul li {
   margin-right: 2em;
 }
 
-nav ul li a {}
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+nav ul li a:hover {
+  color: var(--darkest-grey);
+}
 
 /*--------->Main<-----------*/
 #main-content {
@@ -67,7 +91,7 @@ nav ul li a {}
 .projects-container {
   background-color: var(--blue);
   margin-top: 4em;
-  padding-top: 4em;
+  padding-top: 5em;
 }
 
 .projects {
@@ -96,7 +120,27 @@ nav ul li a {}
 
 /*--------->Footer<-----------*/
 /*--------->Media Queries<-----------*/
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  #nav-bar {
+    background: var(--red);
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  }
+
+  #main-content {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+}
 
 /*--------->NOTES<-----------*/
 /*
