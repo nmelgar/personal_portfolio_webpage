@@ -15,7 +15,7 @@
 /*--------->Variables<-----------*/
 :root {
   --dark: #202022;
-  --dark-blue: #3f4d63;
+  --dark-blue: #36517d;
   --grey: #c6ccd8;
   --dark-grey: #495057;
   --darkest-grey: #343A40;
@@ -133,7 +133,17 @@ nav ul li a:hover {
   color: red;
 }
 
+.showall {
 
+  padding-top: 0.8em;
+  padding-bottom: 4em;
+  margin: 20px;
+
+}
+#showall-text{
+  font-size: 1.5em;
+
+}
 
 .contact {
   align-items: center;
