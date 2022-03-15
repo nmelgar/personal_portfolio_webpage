@@ -23,12 +23,18 @@
   --blue: #274b69;
   --white: #FFFFFF;
   --red: #ba181b;
+
+  /*New colors*/
+  --super-dark: #29262B;
+  --dark-purple: #3C3541;
+  --purple: #AC5FDB;
+  --ligt-purple: #E3A2EE;
 }
 
 /*--------->General Styles<-----------*/
 body {
-  background-color: var(--darkest-grey);
-  color: var(--white);
+  background-color:#ffffff;
+  color: var(--purple);
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   /*Max width for the main container*/
@@ -51,7 +57,7 @@ h3, h4 {
   font-size: 2em;
   font-style: italic;
   font-weight: lighter;
-  color: #58baba;
+  color: var(--dark-purple);
 }
 
 #these-are {
@@ -59,6 +65,7 @@ h3, h4 {
   text-decoration: underline;
   text-underline-position: under;
   font-weight: 100;
+  color: var(--white);
 }
 
 img {
@@ -69,7 +76,7 @@ img {
 /*--------->HEADER<-----------*/
 
 #nav-bar {
-  background: var(--red);
+  background: #4c1f4d;
   padding: 0;
   position: fixed;
   text-align: right;
@@ -95,14 +102,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--white);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 300;
   font-size: 1.3em;
 }
 
 nav ul li a:hover {
-  color: var(--darkest-grey);
+  color: var(--ligt-purple);
 }
 
 
@@ -116,7 +123,7 @@ nav ul li a:hover {
 }
 
 .projects-container {
-  background-color: var(--dark-blue);
+  background-color: #7b337d;
   margin-top: 4em;
   padding-top: 4.5em;
 }
@@ -134,7 +141,7 @@ nav ul li a:hover {
 }
 
 .project-container {
-  background: var(--darkest-grey);
+  background: #b95abc;
   padding: 0;
   margin: 1em;
 }
@@ -149,7 +156,7 @@ nav ul li a:hover {
 }
 
 .project-container:hover a {
-  color: #58baba;
+  color: var(--dark-purple);
 }
 
 .showall {
@@ -159,19 +166,19 @@ nav ul li a:hover {
 }
 
 #showall-text {
-  background: var(--darkest-grey);
+  background: var(--dark-purple);
   font-size: 1.5em;
   padding: 0.5em 1.5em 0.5em 1.5em;
   color: var(--white);
 }
 
 #showall-text:hover {
-  background: var(--red);
+  background: var(--purple);
 }
 
 .contact {
   align-items: center;
-  border-bottom: 0.8em solid var(--red);
+  border-bottom: 0.8em solid var(--purple);
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -179,11 +186,11 @@ nav ul li a:hover {
 }
 
 .contact ul li a:hover {
-  color: red;
+  color:var(--purple);
 }
 
 .social-btn {
-  color: white;
+  color: var(--dark-purple);
   background: none;
   border: none;
   font-size: 1.3em;
@@ -220,7 +227,6 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   #nav-bar {
-    background: var(--red);
     position: fixed;
     text-align: center;
     width: 100%;
@@ -235,7 +241,6 @@ nav ul li a:hover {
   }
 
   h3, h4 {
-    color: #e40017;
     font-size: 1.5em;
     font-weight: 400;
     font-style: italic;
