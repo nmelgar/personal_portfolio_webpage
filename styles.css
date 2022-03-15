@@ -51,7 +51,7 @@ h3, h4 {
   font-size: 2em;
   font-style: italic;
   font-weight: lighter;
-  color: red;
+  color: #58baba;
 }
 
 #these-are {
@@ -149,7 +149,7 @@ nav ul li a:hover {
 }
 
 .project-container:hover a {
-  color: red;
+  color: #58baba;
 }
 
 .showall {
