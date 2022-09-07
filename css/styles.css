@@ -1,0 +1,205 @@
+/*--------->|| FONTS ||--------<
+---------------------------------*/
+/*--------->|| VARIABLES ||--------<
+---------------------------------*/
+:root {
+  --blue: #017FFF;
+  --grey: #888888;
+  --black: #000000;
+  --white: #ffffff;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*--------->|| GENERAL STYLES ||--------<
+---------------------------------*/
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 720px;
+  min-height: calc(90vh - 40px);
+}
+
+/*--------->|| MAIN CONTENT ||--------<
+---------------------------------*/
+h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  color: var(--blue)
+}
+
+#about-me {
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: var(--blue)
+}
+
+hr {
+  /* display: inline; */
+  border: 1px solid var(--grey);
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* for bachelors and job positions */
+.important-title {
+  font-weight: 600;
+}
+
+.inline-links:hover {
+  color: var(--black);
+}
+
+.inline-links:visited {
+  color: var(--blue);
+}
+
+/*--------->|| PROJECTS ||--------<
+---------------------------------*/
+
+.projects-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-container {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.project-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-caption {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.menu-caption a {
+  text-decoration: none;
+  /* color: var(--dark-blue); */
+}
+
+.project-image:hover {
+  opacity: 80%;
+}
+
+
+.menu-caption a:hover {
+  color: var(--blue);
+}
+
+
+
+/*--------->|| SKILLS ||--------<
+---------------------------------*/
+
+
+#skills-containter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.skill {
+  margin-top: 5%;
+}
+
+.w3-green {
+  background-color: var(--blue) !important;
+  height: 14px !important;
+}
+
+.w3-light-grey {
+  width: 75%;
+}
+
+/*--------->|| FOOTER ||--------<
+---------------------------------*/
+footer {
+  width: 100%;
+  background-color: var(--dark-blue);
+  margin-top: 10%;
+  border-top: 3px solid var(--light-grey);
+}
+
+
+
+.footerbottom {
+  display: grid;
+
+}
+
+
+
+
+/*--------->|| MEDIA QUERIES ||--------<
+---------------------------------*/
+@media screen and (max-width: 776px) {
+  body {
+    max-width: 90%;
+  }
+
+  .container {
+    /* width: 100%; */
+    /* max-width: 0px; */
+    margin: 30px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 33.3%);
+  }
+
+  .project-container {
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .project-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-container img {
+    width: 75%;
+    height: auto;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .w3-light-grey {
+    width: 50%;
+  }
+
+  .menu-caption {
+    display: none;
+  }
+}

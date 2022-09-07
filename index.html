@@ -1,169 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <title>Nefi Melgar | Home</title>
-  <meta name="author" content="">
-  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="icon" href="#">
+  <title>Nefi Melgar | Home </title>
+  <meta name="description" content="nmelgar projects and contact information">
+  <meta name="keywords" content="web developer, nmelgar, technology">
+  <meta name="author" content="nmelgar projects">
+  <meta name="robots" content="noodp,noydir" />
+  <link rel="icon" href="../images/logo.png">
 
-  <link href="styles.css" rel="stylesheet">
+
+  <!--CSS-->
+  <!-- This is for the progress bars -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MVTBJ103B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-7MVTBJ103B');
-  </script>
-  <!---Google link ends here-->
+
 </head>
 
+<!---BODY STARTS HERE-->
+
 <body>
-  <div id="container">
-    <!--HEADER & NAVBAR-->
-    <header id="header">
-      <nav id="nav-bar">
-        <ul id="nav-ul">
-          <li class="nav-link"><a href="#main-content">About</a></li>
-          <li class="nav-link"><a href="#work-link">Work</a></li>
-          <li class="nav-link"><a href="#contact-info">Contact</a></li>
+  <!--CONTAINER STARTS HERE-->
+  <div class="container">
+    <section id="about">
+      <h1>Nefi Melgar</h1>
+      <p id="about-me">Techie | Web Developer | Administrative Assistant</p>
+    </section>
+
+    <section id="experience">
+      <h3>Work Experience</h3>
+      <hr>
+      <div class="job">
+        <p class="job-description">
+          <span class="important-title">Administrative Assistant</span> | 2016 - Present<br>
+          The Church of Jesus Christ of Latter-day Saints
+        </p>
+        <ul class="job-responsibilities">
+          <li>Manage finances and assure the honest use of resources</li>
+          <li>Support 80+ teachers with their duties</li>
+          <li>Follow up to over 1000 students&apos; progress</li>
+          <li>Help to increase the number of students in the programs</li>
+          <li>Manage social media channels</li>
+          <li>Create and follow up reports to improve performance</li>
+          <li>Use different business web applications and software</li>
+          <li>Manage Mexico area <a class="inline-links" href="http://cuaderno.org/" target="_blank">website</a> (+5k visitors monthly)</li>
+          <li>IT support to teachers, students, parents and coworkers</li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <!--MAIN CONTENT-->
-      <div id="main-content">
-        <h1 id="hello-nefi">Hey! I am Nefi</h1>
-        <h4>A Web Developer</h4>
       </div>
 
-      <!--PROJECTS-->
-      <section class="projects-container" id="work-link">
+      <div class="job">
+        <p class="job-description">
+          <span class="important-title">Web Developer</span> | 2020 - Present<br>
+          Freelancer
+        </p>
+        <ul class="job-responsibilities">
+          <li>Develop Static websites using HTML,CSS, and JavaScript</li>
+          <li>Use of Git, GitHub, Figma, VS Code, Adobe Photoshop,
+            Adobe Illustrator, Canvas and different web browsers</li>
+          <li>Help organizations to increase their audiences</li>
 
-        <h2 id="these-are">These are some of my projects</h2>
-
-        <div class="projects">
-
-          <!--LIST OF PROJECTS-->
-
-          <figure class="project-container">
-            <a href="https://elvoldi.herokuapp.com/menu/" target="_blank">
-              <img class="project-image" src="images/elvoldi.jpg" alt="Image of el voldi project">
-            </a>
-            <figcaption><a class="" href="https://elvoldi.herokuapp.com/menu/" target="_blank">Hamburguesas El Voldi</a>
-            </figcaption>
-          </figure>
-
-
-          <figure class="project-container">
-            <a href="https://cuaderno.org" target="_blank">
-              <img class="project-image" src="images/cuaderno.jpg" alt="Image of the cuaderno website">
-            </a>
-            <figcaption><a class="" href="https://cuaderno.org" target="_blank">cuaderno.org</a></figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/maya_tile/" target="_blank">
-              <img class="project-image" src="images/mayatile.jpg" alt="Image of the mayatile.com website">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/maya_tile/" target="_blank">Maya | Tile & Design</a>
-            </figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/etch_a_sketch/" target="_blank">
-              <img class="project-image" src="images/etchasketch.jpg" alt="Image of etch a sketch website">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/etch_a_sketch/" target="_blank">Etch-a-Sketch</a>
-            </figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/rock-paper-scissors/" target="_blank">
-              <img class="project-image" src="images/rockpaperscissors.jpg"
-                alt="Image of rock paper scissors game website">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/rock-paper-scissors/" target="_blank">Rock, Paper,
-                Scissors</a></figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/facebook-login/" target="_blank">
-              <img class="project-image" src="images/facebooklogin.jpg"
-                alt="Image of Facebook login webpage clone project">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/facebook-login/" target="_blank">Facebook Login
-                clone</a></figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/google-homepage/" target="_blank">
-              <img class="project-image" src="images/googlehomepage.jpg" alt="Image of Google home page clone project">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/google-homepage/" target="_blank">Google main page
-                clone</a></figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/technical_documentation_page/" target="_blank">
-              <img class="project-image" src="images/technicaldoc.jpg"
-                alt="Image of the technical documentation page project">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/technical_documentation_page/"
-                target="_blank">Tecnical Documentation Page</a></figcaption>
-          </figure>
-
-          <figure class="project-container">
-            <a href="https://nmelgar.github.io/survey_form_freecodecamp_experience/" target="_blank">
-              <img class="project-image" src="images/surveyform.jpg"
-                alt="Image of the survey from about freecodecamp experience project">
-            </a>
-            <figcaption><a class="" href="https://nmelgar.github.io/survey_form_freecodecamp_experience/"
-                target="_blank">Survey Form</a></figcaption>
-          </figure>
-
-
-
-
-        </div>
-        <div class="showall">
-          <button type="button" id="showall-text" target="_blank"
-            onclick="location.href='https://github.com/nmelgar'">Show All</button>
-        </div>
-      </section>
-
-
-    </main>
-    <!--CONTACT INFORMATION-->
-    <section class="contact" id="contact-info">
-
-      <h2 id="lets-work">Lets work together!</h2>
-      <h3>Don't hesitate to contact me</h3>
-
-      <ul id="social-media-links">
-        <li><a href="https://www.facebook.com/nefimelgaroficial" target="_blank" class="social-btn"><i
-              class="fa fa-facebook"></i> Facebook</a></li>
-        <li><a href="https://github.com/nmelgar" target="_blank" class="social-btn"><i class="fa fa-github"></i>
-            Github</a></li>
-        <li><a href="https://www.instagram.com/nefimelgar/" target="_blank" class="social-btn"><i
-              class="fa fa-instagram"></i> Instagram</a></li>
-        <li><a href="mailto:melgar.nefi@gmail.com" class="social-btn"><i class="fa fa-at"></i> Send a mail</a></li>
-        <li><a href="https://www.linkedin.com/in/nefimelgar/" target="_blank" class="social-btn"><i
-              class="fa fa-linkedin"></i> Find me</a></li>
-
-      </ul>
-
+        </ul>
+      </div>
     </section>
 
 
-    <footer>
-    </footer>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <hr>
+      <div class="projects-container">
+        <figure class="project-container">
+          <a href="http://cuaderno.org/" target="_blank">
+            <img class="project-image" src="/images/cuaderno.jpg" alt="Image of cuaderno.org website">
+          </a>
+          <figcaption class="menu-caption"><a class="" href="http://cuaderno.org/" target="_blank">cuaderno.org</a></figcaption>
+        </figure>
+
+        <figure class="project-container">
+          <a href="https://nmelgar.github.io/maya_tile/" target="_blank">
+            <img class="project-image" src="/images/maya.jpg" alt="Image of mayatile.com site">
+          </a>
+          <figcaption class="menu-caption"><a class="" href="https://nmelgar.github.io/maya_tile/" target="_blank">mayatile.com</a></figcaption>
+        </figure>
+
+        <figure class="project-container">
+          <a href="https://elvoldi.herokuapp.com/menu/" target="_blank">
+            <img class="project-image" src="/images/voldi.jpg" alt="Image of Hamburgesas El Voldi website">
+          </a>
+          <figcaption class="menu-caption"><a class="" href="https://elvoldi.herokuapp.com/menu/" target="_blank">El Voldi</a></figcaption>
+        </figure>
+      </div>
+
+      <!-- <a href="#" id="more-projects-button">MORE PROJECTS</a> -->
+
+    </section>
+
+    <section id="education">
+      <h3>Education</h3>
+      <hr>
+      <div class="education-details">
+        <p class="education-description">
+          <span class="important-title">BS in Applied Technology - Software and Web Development </span><br>
+          Brigham Young University - Idaho | 2021 - Present
+        </p>
+        <ul class="relevant-courses">
+          <li>Algorithm Design</li>
+          <li>Programming With Functions</li>
+          <li>Programming Building Blocks (Python)</li>
+          <li>JavaScript Language </li>
+          <li>Web Frontend Development</li>
+          <li>Advanced CSS</li>
+        </ul>
+      </div>
+
+      <div class="education-details">
+        <p class="education-description">
+          <span class="important-title">BS in Web Design and Development - Web Design</span><br>
+          Brigham Young University - Idaho | 2015 - 2020
+        </p>
+        <ul class="relevant-courses">
+          <li>Graphic Design</li>
+          <li>Creating Online Media</li>
+          <li>Visual Media</li>
+          <li>Social Media Design</li>
+          <li>Typography</li>
+          <li>Human Computer Interaction</li>
+          <li>Information Design</li>
+          <li>Interaction Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h3>Skills</h3>
+      <hr>
+
+      <div id="skills-containter">
+
+        <div class="skill">
+          <span>HTML</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:70%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:60%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Python</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:50%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Git</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:45%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Javascript</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:35%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Bilingual(English/Spanish)</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Photoshop</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:60%"></div>
+          </div>
+        </div>
+
+        
+
+        <div class="skill">
+          <span>Graphic Design</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Illustrator</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:60%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Leadership</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Communication</span>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-green w3-round" style="height:24px;width:90%"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
   </div>
+  <!--CONTAINER ENDS HERE-->
+
+  <footer>
+    <div class="footerbottom">
+
+    </div>
+  </footer>
+
+
+
 </body>
+<!--BODY ENDS HERE-->
 
 </html>
