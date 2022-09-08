@@ -48,6 +48,22 @@ h3 {
   color: var(--blue)
 }
 
+#social-icons {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#social-icons .fa {
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#social-icons .fa:hover {
+  color: var(--blue);
+}
+
 hr {
   /* display: inline; */
   border: 1px solid var(--grey);
