@@ -12,13 +12,13 @@ function generate_projects() {
 
     var images_container = document.getElementById("parent_of_giphys");
 
-    for (var i = 0; i < parsedData.data.length; i++) {
+    for (var i = 0; i < parsedData.projects.length; i++) {
       var col_div_element = document.createElement("div");
       col_div_element.classList.add("col");
       var parent_image = document.createElement("div");
       parent_image.classList.add("card", "shadow-sm");
 
-      var image_url = parsedData.data[i].images.original.url;
+      var image_url = parsedData.projects[i].images_url;
       var image_element = document.createElement("img");
       image_element.setAttribute("src", image_url);
       image_element.style.height = "200px";
@@ -29,14 +29,14 @@ function generate_projects() {
       under_image.classList.add("card-body");
       var text_under_image = document.createElement("p");
       text_under_image.classList.add("card-text");
-      var title = parsedData.data[i].title;
-      var short_title = title.slice(0, 15);
+      var title = parsedData.projects[i].title;
+      var short_title = title.slice(0, 40);
       if (short_title == "") {
         text_under_image.textContent = "No title available :(";
       } else {
         text_under_image.textContent = short_title;
       }
-      text_under_image.style.fontSize = "10px";
+      text_under_image.style.fontSize = "16px";
 
       var div_under_paragraph = document.createElement("div");
       div_under_paragraph.classList.add(
@@ -57,8 +57,16 @@ function generate_projects() {
         "btn-sm",
         "btn-outline-secondary"
       );
-      original_image_button.textContent = "Original Image";
+      original_image_button.textContent = "Code";
       original_image_button.setAttribute("type", "button");
+      var code_url = parsedData.projects[i].code_url;
+      if (code_url == "#") {
+        original_image_link.setAttribute("href", code_url);
+        original_image_link.setAttribute("target", "_self");
+      } else {
+        original_image_link.setAttribute("href", code_url);
+        original_image_link.setAttribute("target", "_blank");
+      }
 
       // insert the second button here
       // var original_image_button = document.createElement('button')
@@ -68,7 +76,7 @@ function generate_projects() {
 
       var smallElement = document.createElement("small");
       smallElement.classList.add("text-body-secondary");
-      smallElement.textContent = word;
+      //   smallElement.textContent = word;
 
       images_container.appendChild(col_div_element);
       col_div_element.appendChild(parent_image);
@@ -86,4 +94,4 @@ function generate_projects() {
   request.send();
 }
 
-generate_projects()
+generate_projects();
