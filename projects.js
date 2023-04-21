@@ -18,9 +18,9 @@ function generate_projects() {
       var parent_image = document.createElement("div");
       parent_image.classList.add("card", "shadow-sm");
 
-      var image_url = parsedData.projects[i].images_url;
+      var images_url = parsedData.projects[i].image_url;
       var image_element = document.createElement("img");
-      image_element.setAttribute("src", image_url);
+      image_element.setAttribute("src", images_url);
       image_element.style.height = "200px";
       image_element.style.width = "320";
       // images_container.appendChild(image_element);
@@ -48,7 +48,7 @@ function generate_projects() {
       button_group.classList.add("btn-group");
 
       var original_image_link = document.createElement("a");
-      original_image_link.setAttribute("href", image_url);
+      original_image_link.setAttribute("href", images_url);
       original_image_link.setAttribute("target", "_blank");
 
       var original_image_button = document.createElement("button");

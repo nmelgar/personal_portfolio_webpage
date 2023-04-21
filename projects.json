@@ -7,7 +7,7 @@
             "category": "Web-Dev",
             "code_url": "#",
             "project_url": "https://cuaderno.org/",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/cuaderno.jpg"
         },
         {
             "title": "Maya Tile",
@@ -16,7 +16,7 @@
             "category": "Web-Dev",
             "code_url": "https://github.com/nmelgar/maya_tile",
             "project_url": "https://nmelgar.github.io/maya_tile/",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/maya.jpg"
         },
         {
             "title": "Hamburguesas El Voldi",
@@ -25,7 +25,7 @@
             "category": "Web-Dev",
             "code_url": "https://github.com/nmelgar/hamburguesas_el_voldi",
             "project_url": "#",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/voldi.jpg"
         },
         {
             "title": "Algorithm Design",
@@ -34,7 +34,7 @@
             "category": "SD",
             "code_url": "https://github.com/nmelgar/algorithm_design",
             "project_url": "https://github.com/nmelgar/algorithm_design",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/algo.jpg"
         },
         {
             "title": "LEGO data analysis",
@@ -43,7 +43,7 @@
             "category": "DataViz",
             "code_url": "https://github.com/nmelgar/lego_my_data",
             "project_url": "https://github.com/nmelgar/lego_my_data",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/lego.jpg"
         },
         {
             "title": "Matthew effect data analysis",
@@ -52,7 +52,7 @@
             "category": "DataViz",
             "code_url": "https://github.com/nmelgar/birthday_sports_dataviz",
             "project_url": "https://github.com/nmelgar/birthday_sports_dataviz",
-            "image_url": ""
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/matt.jpg"
         }
     ]
 }
