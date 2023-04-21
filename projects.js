@@ -10,21 +10,24 @@ function generate_projects() {
     var parsedData = JSON.parse(response);
     console.log(parsedData);
 
-    var images_container = document.getElementById("parent_of_giphys");
+    // parent to insert the projects
+    var images_container = document.getElementById("parent_of_projects");
 
     for (var i = 0; i < parsedData.projects.length; i++) {
+      // create main container for the projects
       var col_div_element = document.createElement("div");
       col_div_element.classList.add("col");
       var parent_image = document.createElement("div");
       parent_image.classList.add("card", "shadow-sm");
 
-      var images_url = parsedData.projects[i].image_url;
+      // create image element
+      var image_url = parsedData.projects[i].image_url;
       var image_element = document.createElement("img");
-      image_element.setAttribute("src", images_url);
+      image_element.setAttribute("src", image_url);
       image_element.style.height = "200px";
       image_element.style.width = "320";
-      // images_container.appendChild(image_element);
 
+      // create container and text below the image
       var under_image = document.createElement("div");
       under_image.classList.add("card-body");
       var text_under_image = document.createElement("p");
@@ -38,45 +41,56 @@ function generate_projects() {
       }
       text_under_image.style.fontSize = "16px";
 
+      // create elements, mainly buttons below the title
       var div_under_paragraph = document.createElement("div");
       div_under_paragraph.classList.add(
         "d-flex",
         "justify-content-between",
         "align-items-center"
       );
+
+      // container for buttons, parent of buttons
       var button_group = document.createElement("div");
       button_group.classList.add("btn-group");
 
-      var original_image_link = document.createElement("a");
-      original_image_link.setAttribute("href", images_url);
-      original_image_link.setAttribute("target", "_blank");
-
-      var original_image_button = document.createElement("button");
-      original_image_button.classList.add(
+      // create original code button link
+      var code_a_parent = document.createElement("a");
+      var original_code_button = document.createElement("button");
+      original_code_button.classList.add(
         "btn",
         "btn-sm",
         "btn-outline-secondary"
       );
-      original_image_button.textContent = "Code";
-      original_image_button.setAttribute("type", "button");
+      original_code_button.textContent = "Code";
+      original_code_button.setAttribute("type", "button");
       var code_url = parsedData.projects[i].code_url;
       if (code_url == "#") {
-        original_image_link.setAttribute("href", code_url);
-        original_image_link.setAttribute("target", "_self");
+        code_a_parent.setAttribute("href", code_url);
+        code_a_parent.setAttribute("target", "_self");
       } else {
-        original_image_link.setAttribute("href", code_url);
-        original_image_link.setAttribute("target", "_blank");
+        code_a_parent.setAttribute("href", code_url);
+        code_a_parent.setAttribute("target", "_blank");
       }
 
-      // insert the second button here
-      // var original_image_button = document.createElement('button')
-      // original_image_button.classList.add("btn", "btn-sm", "btn-outline-secondary")
-      // original_image_button.textContent = "Original Image"
-      // original_image_button.setAttribute("type", "button")
+      // create live project button here
+      var live_a_parent = document.createElement("a");
+      var live_code_button = document.createElement("button");
+      live_code_button.classList.add("btn", "btn-sm", "btn-outline-secondary");
+      live_code_button.textContent = "Live";
+      live_code_button.setAttribute("type", "button");
+      var project_live = parsedData.projects[i].project_url;
+      if (project_live == "#") {
+        live_a_parent.setAttribute("href", "#");
+        live_a_parent.setAttribute("target", "_self");
+      } else {
+        live_a_parent.setAttribute("href", project_live);
+        live_a_parent.setAttribute("target", "_blank");
+      }
 
       var smallElement = document.createElement("small");
       smallElement.classList.add("text-body-secondary");
-      //   smallElement.textContent = word;
+      var category = parsedData.projects[i].category;
+      smallElement.textContent = category;
 
       images_container.appendChild(col_div_element);
       col_div_element.appendChild(parent_image);
@@ -85,8 +99,10 @@ function generate_projects() {
       under_image.append(text_under_image);
       under_image.appendChild(div_under_paragraph);
       div_under_paragraph.appendChild(button_group);
-      button_group.appendChild(original_image_link);
-      original_image_link.appendChild(original_image_button);
+      button_group.appendChild(code_a_parent);
+      code_a_parent.appendChild(original_code_button);
+      button_group.appendChild(live_a_parent);
+      live_a_parent.appendChild(live_code_button);
       div_under_paragraph.appendChild(smallElement);
     }
   };
