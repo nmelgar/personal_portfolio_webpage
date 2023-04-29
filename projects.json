@@ -28,8 +28,17 @@
             "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/voldi.jpg"
         },
         {
+            "title": "Giphy Generator API",
+            "description": "Generate GIFs froms Giphy's API",
+            "technologies": "HTML, CSS, JavaScript",
+            "category": "Web-Dev",
+            "code_url": "https://github.com/nmelgar/random_giphy_generator",
+            "project_url": "https://ponicat.app/nm/giphy/",
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/algo.jpg"
+        },
+        {
             "title": "Algorithm Design",
-            "description": "Learned and applied programmin to algorithms.",
+            "description": "Learned and applied programming to algorithms.",
             "technologies": "Python",
             "category": "SD",
             "code_url": "https://github.com/nmelgar/algorithm_design",
@@ -46,13 +55,22 @@
             "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/lego.jpg"
         },
         {
-            "title": "Matthew effect data analysis",
+            "title": "Matthew effect analysis",
             "description": "Analyzing Matthew effect in sports.",
             "technologies": "Tableau",
             "category": "DataViz",
             "code_url": "https://github.com/nmelgar/birthday_sports_dataviz",
             "project_url": "https://github.com/nmelgar/birthday_sports_dataviz",
             "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/matt.jpg"
+        },
+        {
+            "title": "Marathons data analysis",
+            "description": "Data analysis of marathons information.",
+            "technologies": "Tableau",
+            "category": "DataViz",
+            "code_url": "https://github.com/nmelgar/marathons_data_viz",
+            "project_url": "https://github.com/nmelgar/marathons_data_viz",
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/lego.jpg"
         }
     ]
 }
