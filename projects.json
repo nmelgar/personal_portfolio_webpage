@@ -34,7 +34,7 @@
             "category": "Web-Dev",
             "code_url": "https://github.com/nmelgar/random_giphy_generator",
             "project_url": "https://ponicat.app/nm/giphy/",
-            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/algo.jpg"
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/giphy.jpg"
         },
         {
             "title": "Algorithm Design",
@@ -70,7 +70,7 @@
             "category": "DataViz",
             "code_url": "https://github.com/nmelgar/marathons_data_viz",
             "project_url": "https://github.com/nmelgar/marathons_data_viz",
-            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/lego.jpg"
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/marathons.jpg"
         }
     ]
 }
