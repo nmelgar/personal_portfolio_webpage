@@ -10,6 +10,15 @@
             "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/cuaderno.jpg"
         },
         {
+            "title": "Git Cheat Sheet",
+            "description": "Website to teach about Git.",
+            "technologies": "HTML, CSS, JavaScript",
+            "category": "Web-Dev",
+            "code_url": "https://github.com/nmelgar/git_cheat_sheet",
+            "project_url": "https://ponicat.app/cheat-sheets/git/",
+            "image_url": "https://raw.githubusercontent.com/nmelgar/portfolio/main/images/projects/git-cheat.jpg"
+        },
+        {
             "title": "Maya Tile",
             "description": "Website for tile company located at Arizona.",
             "technologies": "HTML, CSS, JavaScript",
